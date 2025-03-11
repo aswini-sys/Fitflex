@@ -1,0 +1,123 @@
+/* Set full-screen background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Pricing container */
+.pricing-container {
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.pricing-header {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid layout for pricing tiers */
+.pricing-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Pricing tier cards */
+.tier-card {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.1); /* Lighter glassmorphism */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.tier-card h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tier-card .price {
+  font-size: 2rem;
+  color: #ff9800;
+  margin: 10px 0;
+}
+
+.tier-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tier-card ul li {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+  background-color: #ff9800;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e68900;
+}
+
+/* Pricing policies */
+.pricing-policies {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.pricing-policies h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.policy {
+  margin-bottom: 10px;
+}
+
+.policy h3 {
+  font-size: 1.5rem;
+  color: #ff9800;
+}
+
+.policy p {
+  font-size: 1rem;
+}
